@@ -1,0 +1,99 @@
+@import "../master.scss";
+
+@keyframes slideleft {
+    from {
+      right: -30%;
+    }
+  
+    to {
+      right: 0;
+    }
+}
+@keyframes slideright {
+    from {
+      right: 0;
+    }
+  
+    to {
+      right: -30%;
+    }
+}
+
+.navbar-container{
+    background-color: $primary;
+    color: $secondary;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $secondary;
+    padding: 0 20px;
+    .menu-desktop{
+        display: flex;
+        a{
+            color: $secondary;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 20px;
+            &:hover{
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+    .menu-mobile{
+        display: none;
+        .menu-mobile-icon{
+            margin-right: 20px;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        .drop-down-menu{
+            width: 30%;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid $secondary;
+            position: absolute;
+            background-color: $primary;
+            right: 0;
+            animation-duration: 1s;
+            animation-name: slideleft;  
+            a{
+                color: $secondary;
+                text-decoration: none;
+                &:hover{
+                    color: white;
+                    cursor: pointer;
+                }
+            }  
+        }
+        .slideright{
+            animation-duration: 1s;
+            animation-name: slideright; 
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .navbar-container{
+        flex-direction: column;
+    }
+    
+}
+@media (max-width: 580px) {
+    .navbar-container{
+        flex-direction: row;
+        .menu-desktop{
+            display: none;
+        }
+        .menu-mobile{
+            display: initial;
+        }
+    }
+
+}
