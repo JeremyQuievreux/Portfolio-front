@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './Navbar.scss';
 
 import { MdMenu } from "react-icons/md";
+import { AiOutlineHome } from "react-icons/ai";
+import { BsGearFill, BsGlobe} from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
 
 function Navbar() {
 
@@ -24,10 +27,10 @@ function Navbar() {
         <nav className="navbar-container">
             <h1>QUI&Eacute;VREUX Jérémy</h1>
             <div className="menu-desktop">
-                <a href="#" ><p>Accueil</p></a>
-                <a href="#" ><p>Compétences</p></a>
-                <a href="#" ><p>Mes projets</p></a>
-                <a href="#" ><p>Me contacter</p></a>
+                <a href="#about" ><p><AiOutlineHome/>Accueil</p></a>
+                <a href="#" ><p><BsGearFill/>Compétences</p></a>
+                <a href="#" ><p><BsGlobe/>Mes projets</p></a>
+                <a href="#" ><p><FiMail/>Me contacter</p></a>
             </div>
             <div className="menu-mobile">
                 <div className="menu-mobile-icon" onClick={(e) => hideMenu(e)}>
@@ -35,10 +38,10 @@ function Navbar() {
                 </div>
                 {showMenu && 
                     <div className="drop-down-menu">
-                        <a href="#" ><p>Accueil</p></a>
-                        <a href="#" ><p>Compétences</p></a>
-                        <a href="#" ><p>Mes projets</p></a>
-                        <a href="#" ><p>Me contacter</p></a>
+                        <a href="#about" ><p><AiOutlineHome/>Accueil</p></a>
+                        <a href="#" ><p><BsGearFill/>Compétences</p></a>
+                        <a href="#" ><p><BsGlobe/>Mes projets</p></a>
+                        <a href="#" ><p><FiMail/>Me contacter</p></a>
                     </div>
                 }
             </div>

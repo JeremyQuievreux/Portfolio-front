@@ -1,0 +1,13 @@
+.about-container{
+    width: 80%;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    .about-left-block{
+        width: 45%;
+    }
+    .about-right-block{
+        width: 45%;
+    }
+}

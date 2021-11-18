@@ -1,13 +1,13 @@
 import './App.scss';
 
 import Navbar from './Navbar/Navbar';
+import About from './About/About';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="app">
       <Navbar/>
-      <h1>On part de là !!!</h1>
+      <About/>
     </div>
   );
 }
