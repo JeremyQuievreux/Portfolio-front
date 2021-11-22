@@ -1,5 +1,30 @@
 @import '../master.scss';
 
+@keyframes slidetoright {
+    from {
+      transform: translateX(-150%);
+      opacity: 0;
+    }
+  
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slidedown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+
+    }
+  
+    to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
 .about-main-container{
     width: 100%;
     display: flex;
@@ -20,6 +45,8 @@
         width: 45%;
         height: 100%;
         color: $secondary;
+        animation-duration: 1.5s;
+        animation-name: slidetoright; 
         p{
             text-align: justify;
             margin-top: 20px;
@@ -31,6 +58,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        animation-duration: 1.5s;
+        animation-name: slidedown; 
         img{
             box-shadow: 30px 30px 30px  black;
             max-width: 100%;
