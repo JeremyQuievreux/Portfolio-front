@@ -29,6 +29,7 @@
     align-items: center;
     color: $secondary;
     padding: 0 20px;
+    border-bottom: 2px solid $secondary;
     .navbar-title{
         font-size: 35px;
     }
@@ -72,7 +73,7 @@
             position: absolute;
             background-color: $primary;
             right: 0;
-            top: 50px;
+            top: 52px;
             animation-duration: 1s;
             animation-name: slideleft;  
             a{
