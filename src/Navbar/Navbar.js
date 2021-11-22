@@ -25,7 +25,7 @@ function Navbar() {
 
     return (
         <nav className="navbar-container">
-            <h1>QUI&Eacute;VREUX Jérémy</h1>
+            <h1 className="navbar-title">QUI&Eacute;VREUX Jérémy</h1>
             <div className="menu-desktop">
                 <a href="#about" ><p><AiOutlineHome/>Accueil</p></a>
                 <a href="#" ><p><BsGearFill/>Compétences</p></a>
@@ -34,7 +34,7 @@ function Navbar() {
             </div>
             <div className="menu-mobile">
                 <div className="menu-mobile-icon" onClick={(e) => hideMenu(e)}>
-                    <p><MdMenu size="2em"/></p>
+                    <p><MdMenu size="3em"/></p>
                 </div>
                 {showMenu && 
                     <div className="drop-down-menu">

@@ -29,16 +29,27 @@
     align-items: center;
     color: $secondary;
     padding: 0 20px;
+    .navbar-title{
+        font-size: 35px;
+    }
     .menu-desktop{
         display: flex;
         a{
             color: $secondary;
             text-decoration: none;
             margin: 10px;
-            font-size: 20px;
+            font-size: 16px;
             &:hover{
                 color: white;
                 cursor: pointer;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                svg{
+                    margin-right: 5px;
+                }
             }
         }
     }
@@ -61,14 +72,26 @@
             position: absolute;
             background-color: $primary;
             right: 0;
+            top: 50px;
             animation-duration: 1s;
             animation-name: slideleft;  
             a{
                 color: $secondary;
                 text-decoration: none;
+                font-size: 16px;
+                width: 100%;
                 &:hover{
                     color: white;
                     cursor: pointer;
+                }
+                p{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 0 10px;
+                    svg{
+                        margin-right: 10px;
+                    }
                 }
             }  
         }
@@ -80,13 +103,13 @@
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .navbar-container{
         flex-direction: column;
     }
     
 }
-@media (max-width: 580px) {
+@media (max-width: 630px) {
     .navbar-container{
         flex-direction: row;
         .menu-desktop{
