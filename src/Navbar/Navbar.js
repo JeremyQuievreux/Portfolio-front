@@ -5,6 +5,11 @@ import { MdMenu } from "react-icons/md";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsGearFill, BsGlobe} from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
+import { IoHardwareChipSharp } from "react-icons/io5";
+import { FaLaptopCode } from "react-icons/fa";
+
+
+
 
 function Navbar() {
 
@@ -28,8 +33,8 @@ function Navbar() {
             <h1 className="navbar-title">QUI&Eacute;VREUX Jérémy</h1>
             <div className="menu-desktop">
                 <a href="#about" ><p><AiOutlineHome/>Accueil</p></a>
-                <a href="#" ><p><BsGearFill/>Compétences</p></a>
-                <a href="#" ><p><BsGlobe/>Mes projets</p></a>
+                <a href="#" ><p><IoHardwareChipSharp/>Compétences</p></a>
+                <a href="#" ><p><FaLaptopCode/>Mes projets</p></a>
                 <a href="#" ><p><FiMail/>Me contacter</p></a>
             </div>
             <div className="menu-mobile">
@@ -39,8 +44,8 @@ function Navbar() {
                 {showMenu && 
                     <div className="drop-down-menu">
                         <a href="#about" ><p><AiOutlineHome/>Accueil</p></a>
-                        <a href="#" ><p><BsGearFill/>Compétences</p></a>
-                        <a href="#" ><p><BsGlobe/>Mes projets</p></a>
+                        <a href="#" ><p><IoHardwareChipSharp/>Compétences</p></a>
+                        <a href="#" ><p><FaLaptopCode/>Mes projets</p></a>
                         <a href="#" ><p><FiMail/>Me contacter</p></a>
                     </div>
                 }
