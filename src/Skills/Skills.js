@@ -12,7 +12,7 @@ function Skills() {
 
     
     return (
-        <div className="skills-main-container">
+        <div className="skills-main-container" id="skills">
             <div className="skills-container">
                 <div className="skills-icon-container">
                     <IoHardwareChipSharp/>
@@ -47,7 +47,7 @@ function Skills() {
                         </div>
                     </div>
                     <div className="skills-underblock">
-                        <h3><CgScreen/>Backend</h3>
+                        <h3><FiDatabase/>Backend</h3>
                         <div className="skills-item">
                             <BsCheckSquareFill/>
                             <p>Node</p>
@@ -62,7 +62,7 @@ function Skills() {
                         </div>
                     </div>
                     <div className="skills-underblock tools">
-                        <h3><CgScreen/>Outils</h3>
+                        <h3><VscTools/>Outils</h3>
                         <div className="skills-item">
                             <BsCheckSquareFill/>
                             <p>Windows</p>

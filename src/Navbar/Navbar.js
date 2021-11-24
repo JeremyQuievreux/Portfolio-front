@@ -33,7 +33,7 @@ function Navbar() {
             <h1 className="navbar-title">QUI&Eacute;VREUX Jérémy</h1>
             <div className="menu-desktop">
                 <a href="#about" ><p><AiOutlineHome/>Accueil</p></a>
-                <a href="#" ><p><IoHardwareChipSharp/>Compétences</p></a>
+                <a href="#skills" ><p><IoHardwareChipSharp/>Compétences</p></a>
                 <a href="#" ><p><FaLaptopCode/>Mes projets</p></a>
                 <a href="#" ><p><FiMail/>Me contacter</p></a>
             </div>
@@ -44,7 +44,7 @@ function Navbar() {
                 {showMenu && 
                     <div className="drop-down-menu">
                         <a href="#about" ><p><AiOutlineHome/>Accueil</p></a>
-                        <a href="#" ><p><IoHardwareChipSharp/>Compétences</p></a>
+                        <a href="#skills" ><p><IoHardwareChipSharp/>Compétences</p></a>
                         <a href="#" ><p><FaLaptopCode/>Mes projets</p></a>
                         <a href="#" ><p><FiMail/>Me contacter</p></a>
                     </div>
