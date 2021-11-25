@@ -2,7 +2,7 @@
 
 @keyframes slideleft {
     from {
-      right: -30%;
+      right: -40%;
     }
   
     to {
@@ -15,7 +15,7 @@
     }
   
     to {
-      right: -30%;
+      right: -40%;
     }
 }
 
@@ -124,6 +124,24 @@
         }
         .menu-mobile{
             display: initial;
+        }
+    }
+
+}
+@media (max-width: 425px) {
+    .navbar-container{
+        .menu-mobile{
+            .drop-down-menu{
+                width: 40%;
+            }
+        }
+    }
+
+}
+@media (max-width: 375px) {
+    .navbar-container{
+        .navbar-title{
+            font-size: 25px;
         }
     }
 

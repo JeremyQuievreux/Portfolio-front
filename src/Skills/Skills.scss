@@ -58,3 +58,33 @@
     }
     
 }
+
+@media (max-width: 450px) {
+    .skills-main-container{
+        .skills-block{
+            flex-direction: column;
+            .skills-underblock{
+                width: 100%;
+            }
+        }
+
+    }
+}
+@media (max-width: 375px) {
+    .skills-main-container{
+        .skills-icon-container{
+            h2{
+                font-size: 22px;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .skills-main-container{
+        .skills-icon-container{
+            h2{
+                font-size: 18px;
+            }
+        }
+    }
+}
