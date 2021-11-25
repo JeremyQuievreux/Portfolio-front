@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     padding: 40px 0;
+    border-bottom: 1px solid $primary;
     .skills-container{
         width: 80%;
     }
@@ -44,7 +45,7 @@
             .skills-item{
                 background-color: $tier2;
                 border-radius: 5px;
-                border: 1px solid black;
+                border: 1px solid $primary;
                 height: 50px;
                 margin-bottom: 20px;
                 display: flex;

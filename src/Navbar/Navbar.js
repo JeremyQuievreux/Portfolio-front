@@ -3,7 +3,6 @@ import './Navbar.scss';
 
 import { MdMenu } from "react-icons/md";
 import { AiOutlineHome } from "react-icons/ai";
-import { BsGearFill, BsGlobe} from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { IoHardwareChipSharp } from "react-icons/io5";
 import { FaLaptopCode } from "react-icons/fa";
