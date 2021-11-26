@@ -2,9 +2,11 @@
 
 .projects-main-container{
     width: 100%;
+    background-color: $tier2;
+    display: flex;
+    justify-content: center;
     .projects-container{
-        width: 100%;
-        background-color: $tier2;
+        width: 90%;
         color: $secondary;
         padding: 40px 0;
         .projects-icon-container{
@@ -32,5 +34,35 @@
             }
         }
 
+    }
+}
+
+@media (max-width: 1024px) {
+    .projects-main-container{
+        .projects-container{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .projects-main-container{
+        .projects-container{
+            .projects-list-container{
+                .projects-item{
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .projects-main-container{
+        .projects-container{
+            .projects-list-container{
+                .projects-item{
+                    width: 100%;
+                }
+            }
+        }
     }
 }
