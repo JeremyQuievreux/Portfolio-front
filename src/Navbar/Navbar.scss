@@ -36,6 +36,7 @@
     }
     .menu-desktop{
         display: flex;
+        align-items: center;
         a{
             color: $secondary;
             text-decoration: none;
@@ -56,6 +57,21 @@
                 }
                 svg{
                     margin-right: 10px;
+                }
+            }
+            .btn-cv{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $secondary;
+                width: 80px;
+                color: $primary;
+                border-radius: 3px;
+                &:hover{
+                    border-bottom: none;
+                    margin-bottom: 10px;
+                    background-color: $primary;
+                    border: 2px solid $secondary;
                 }
             }
         }
@@ -110,13 +126,13 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
     .navbar-container{
         flex-direction: column;
     }
     
 }
-@media (max-width: 630px) {
+@media (max-width: 660px) {
     .navbar-container{
         flex-direction: row;
         .menu-desktop{
