@@ -59,8 +59,16 @@
     }
     
 }
+@media (max-width: 680px) {
+    .skills-main-container{
+        .skills-container{
+            width: 90%;
+        }
+    }
+}
 
-@media (max-width: 450px) {
+
+@media (max-width: 610px) {
     .skills-main-container{
         .skills-block{
             flex-direction: column;
