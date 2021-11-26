@@ -4,6 +4,7 @@ import React from 'react'
 import { FaLaptopCode } from "react-icons/fa";
 
 
+
 function Projects() {
     return (
         <div className="projects-main-container">
@@ -13,23 +14,41 @@ function Projects() {
                     <h2>Mes projets</h2>
                 </div>
                 <div className="projects-list-container">
-                    <div className="projects-item">
-                        <p className="preview">Item 1</p>
+                    <div className="projects-item item-1">
+                        <div className="project-info">
+                            <h3>Nom du projet 1</h3>
+                            <p>Description du projet et techno</p>
+                        </div>
                     </div>
-                    <div className="projects-item">
-                        <p className="preview">Item 2</p>
+                    <div className="projects-item item-1">
+                        <div className="project-info">
+                            <h3>Nom du projet 2</h3>
+                            <p>Description du projet et techno</p>
+                        </div>
                     </div>
-                    <div className="projects-item">
-                        <p className="preview">Item 3</p>
+                    <div className="projects-item item-1">
+                        <div className="project-info">
+                            <h3>Nom du projet 3</h3>
+                            <p>Description du projet et techno</p>
+                        </div>
                     </div>
-                    <div className="projects-item">
-                        <p className="preview">Item 4</p>
+                    <div className="projects-item item-1">
+                        <div className="project-info">
+                            <h3>Nom du projet 4</h3>
+                            <p>Description du projet et techno</p>
+                        </div>
                     </div>
-                    <div className="projects-item">
-                        <p className="preview">Item 5</p>
+                    <div className="projects-item item-1">
+                        <div className="project-info">
+                            <h3>Nom du projet 5</h3>
+                            <p>Description du projet et techno</p>
+                        </div>
                     </div>
-                    <div className="projects-item">
-                        <p className="preview">Item 6</p>
+                    <div className="projects-item item-1">
+                        <div className="project-info">
+                            <h3>Nom du projet 6</h3>
+                            <p>Description du projet et techno</p>
+                        </div>
                     </div>
                 </div>
             </div>
