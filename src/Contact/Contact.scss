@@ -1,0 +1,106 @@
+@import '../master.scss';
+
+.contact-main-container{
+    width: 100%;
+    background-color: $tier3;
+    border-top: 1px solid $primary;
+    color: $secondary;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    border-bottom: 1px solid $primary;
+    .contact-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-icon-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        svg{
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .contact-form{
+        background-color: $tier2;
+        border-radius: 3px;
+        border: 1px solid $primary;
+        width: 50%;
+        max-width: 600px;
+        padding: 30px;
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .form-line{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 0 10px;
+                margin: 10px 0;
+                
+                input{
+                    margin: 10px 0;
+                    height: 30px;
+                    &:focus{
+                        outline: none;
+                        border: 3px solid $secondary;
+                    }
+                }
+                textarea{
+                    margin: 10px 0;
+                    &:focus{
+                        outline: none;
+                        border: 3px solid $secondary;
+                    }
+                }
+            }
+            button{
+                background-color: $secondary;
+                width: 100px;
+                height: 30px;
+                border-radius: 3px;
+                border: none;
+                border-color: 3px solid $primary;
+                &:hover{
+                    color: $secondary;
+                    background-color: $primary;
+                    border: 2px solid  $secondary;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-main-container{
+        .contact-container{
+            .contact-form{
+                width: 60%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .contact-main-container{
+        .contact-container{
+            .contact-form{
+                width: 70%;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .contact-main-container{
+        .contact-container{
+            .contact-form{
+                width: 95%;
+            }
+        }
+    }
+}

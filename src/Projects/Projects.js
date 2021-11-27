@@ -7,7 +7,7 @@ import { FaLaptopCode } from "react-icons/fa";
 
 function Projects() {
     return (
-        <div className="projects-main-container">
+        <section className="projects-main-container" id="projects">
             <div className="projects-container">
                 <div className="projects-icon-container">
                     <FaLaptopCode/>
@@ -52,7 +52,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
