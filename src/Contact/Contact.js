@@ -26,19 +26,22 @@ function Contact() {
                     <form onSubmit={(e) => handleSubmit(e)}>
                         <div className="form-line">
                             <label htmlFor="lastname">Nom : </label>
-                            <input type="text" name="lastname" id="lastname" value={messageInfo.lastname} onChange={(e) => setMessageInfo({...messageInfo, lastname: e.target.value})}/>
+                            <input type="text" name="lastname" id="lastname" 
+                            placeholder="Votre Nom"
+                            value={messageInfo.lastname} 
+                            onChange={(e) => setMessageInfo({...messageInfo, lastname: e.target.value})}/>
                         </div>
                         <div className="form-line">
                             <label htmlFor="firstname">Prénom : </label>
-                            <input type="text" name="firstname" id="firstname" value={messageInfo.firstname} onChange={(e) => setMessageInfo({...messageInfo, firstname: e.target.value})}/>
+                            <input type="text" name="firstname" id="firstname" placeholder="Votre Prénom" value={messageInfo.firstname} onChange={(e) => setMessageInfo({...messageInfo, firstname: e.target.value})}/>
                         </div>
                         <div className="form-line">
                             <label htmlFor="email">Adresse Mail : </label>
-                            <input type="email" name="email" id="email" value={messageInfo.email} onChange={(e) => setMessageInfo({...messageInfo, email: e.target.value})}/>
+                            <input type="email" name="email" id="email" placeholder="Votre adresse mail" value={messageInfo.email} onChange={(e) => setMessageInfo({...messageInfo, email: e.target.value})}/>
                         </div>
                         <div className="form-line">
                             <label htmlFor="content">Message : </label>
-                            <textarea name="content" id="content"  rows="5" cols="33" value={messageInfo.content} onChange={(e) => setMessageInfo({...messageInfo, content: e.target.value})}>
+                            <textarea name="content" id="content"  rows="5" cols="33" placeholder="Laisse moi un petit message surtout si vous voulez me recruter !" value={messageInfo.content} onChange={(e) => setMessageInfo({...messageInfo, content: e.target.value})}>
                                 message de ta race
                             </textarea>
                         </div>
