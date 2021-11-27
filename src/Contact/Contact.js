@@ -8,15 +8,11 @@ import { FiMail } from "react-icons/fi";
 
 function Contact() {
 
-    const [lastname, setLastName] = useState("");
+    const [messageInfo, setMessageInfo] = useState({lastname: "", firstname: "", email:"", content:""});
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(lastname);
-    }
-
-    const handleInput = (e, setter) => {
-        setter(e.target.value);
+        setMessageInfo({lastname: "", firstname: "", email:"", content:""})
     }
 
     return (
@@ -27,22 +23,22 @@ function Contact() {
                     <h2>Contact</h2>
                 </div>
                 <div className="contact-form">
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={(e) => handleSubmit(e)}>
                         <div className="form-line">
                             <label htmlFor="lastname">Nom : </label>
-                            <input type="text" name="lastname" id="lastname" value={lastname} onChange={(e) => handleInput(e, setLastName)}/>
+                            <input type="text" name="lastname" id="lastname" value={messageInfo.lastname} onChange={(e) => setMessageInfo({...messageInfo, lastname: e.target.value})}/>
                         </div>
                         <div className="form-line">
                             <label htmlFor="firstname">Prénom : </label>
-                            <input type="text" name="firstname" id="firstname" />
+                            <input type="text" name="firstname" id="firstname" value={messageInfo.firstname} onChange={(e) => setMessageInfo({...messageInfo, firstname: e.target.value})}/>
                         </div>
                         <div className="form-line">
                             <label htmlFor="email">Adresse Mail : </label>
-                            <input type="email" name="email" id="email" />
+                            <input type="email" name="email" id="email" value={messageInfo.email} onChange={(e) => setMessageInfo({...messageInfo, email: e.target.value})}/>
                         </div>
                         <div className="form-line">
-                            <label htmlFor="message">Message : </label>
-                            <textarea name="message" id="message"  rows="5" cols="33">
+                            <label htmlFor="content">Message : </label>
+                            <textarea name="content" id="content"  rows="5" cols="33" value={messageInfo.content} onChange={(e) => setMessageInfo({...messageInfo, content: e.target.value})}>
                                 message de ta race
                             </textarea>
                         </div>

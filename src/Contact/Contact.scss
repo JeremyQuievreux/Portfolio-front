@@ -54,6 +54,7 @@
                 }
                 textarea{
                     margin: 10px 0;
+                    border: 3px solid transparent;
                     &:focus{
                         outline: none;
                         border: 3px solid $secondary;
