@@ -12,6 +12,7 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
         setMessageInfo({lastname: "", firstname: "", email:"", content:""})
     }
 
@@ -27,22 +28,34 @@ function Contact() {
                         <div className="form-line">
                             <label htmlFor="lastname">Nom : </label>
                             <input type="text" name="lastname" id="lastname" 
-                            placeholder="Votre Nom"
-                            value={messageInfo.lastname} 
-                            onChange={(e) => setMessageInfo({...messageInfo, lastname: e.target.value})}/>
+                                required
+                                placeholder="Votre Nom"
+                                value={messageInfo.lastname} 
+                                onChange={(e) => setMessageInfo({...messageInfo, lastname: e.target.value})}/>
                         </div>
                         <div className="form-line">
                             <label htmlFor="firstname">Prénom : </label>
-                            <input type="text" name="firstname" id="firstname" placeholder="Votre Prénom" value={messageInfo.firstname} onChange={(e) => setMessageInfo({...messageInfo, firstname: e.target.value})}/>
+                            <input type="text" name="firstname" id="firstname" 
+                                required
+                                placeholder="Votre Prénom" 
+                                value={messageInfo.firstname} 
+                                onChange={(e) => setMessageInfo({...messageInfo, firstname: e.target.value})}/>
                         </div>
                         <div className="form-line">
                             <label htmlFor="email">Adresse Mail : </label>
-                            <input type="email" name="email" id="email" placeholder="Votre adresse mail" value={messageInfo.email} onChange={(e) => setMessageInfo({...messageInfo, email: e.target.value})}/>
+                            <input type="email" name="email" id="email" 
+                                required
+                                placeholder="Votre adresse mail" 
+                                value={messageInfo.email} 
+                                onChange={(e) => setMessageInfo({...messageInfo, email: e.target.value})}/>
                         </div>
                         <div className="form-line">
                             <label htmlFor="content">Message : </label>
-                            <textarea name="content" id="content"  rows="5" cols="33" placeholder="Laisse moi un petit message surtout si vous voulez me recruter !" value={messageInfo.content} onChange={(e) => setMessageInfo({...messageInfo, content: e.target.value})}>
-                                message de ta race
+                            <textarea name="content" id="content"  rows="5" cols="33" 
+                                required
+                                placeholder="Laisse moi un petit message surtout si vous voulez me recruter !" 
+                                value={messageInfo.content} 
+                                onChange={(e) => setMessageInfo({...messageInfo, content: e.target.value})}>
                             </textarea>
                         </div>
                         <button type="submit">Envoyer</button>

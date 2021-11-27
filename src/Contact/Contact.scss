@@ -48,18 +48,30 @@
                     margin: 10px 0;
                     height: 30px;
                     padding-left: 10px;
+                    background-color: $tier3;
+                    border-style: none;
+                    border-radius: 3px;
+                    border: 1px solid $primary;
+                    color: $secondary;
+
                     &:focus{
                         outline: none;
-                        border: 3px solid $secondary;
+                        background-color: $secondary;
+                        color: $primary;
                     }
                 }
                 textarea{
                     margin: 10px 0;
                     border: 3px solid transparent;
+                    border-radius: 3px;
                     padding: 10px;
+                    background-color: $tier3;
+                    border: 1px solid $primary;
+                    color: $secondary;
                     &:focus{
                         outline: none;
-                        border: 3px solid $secondary;
+                        background-color: $secondary;
+                        color: $primary;
                     }
                 }
             }
