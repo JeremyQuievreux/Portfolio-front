@@ -2,6 +2,7 @@ import './Contact.scss';
 import './Contact.css';
 
 import React, { useState } from 'react'
+import Axios from 'axios';
 
 import { FiMail } from "react-icons/fi";
 
@@ -9,10 +10,24 @@ import { FiMail } from "react-icons/fi";
 function Contact() {
 
     const [messageInfo, setMessageInfo] = useState({lastname: "", firstname: "", email:"", content:""});
+    const [errorMessage, setErrorMessage] = useState('');
+    const [showButton, setShowButton] = useState(true);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+        Axios.post("http://localhost:1337/sendmessage",  
+        messageInfo )
+        .then((res) => {
+            if (!res.data.error) {
+                setErrorMessage(res.data.message);
+                setShowButton(false);
+                setTimeout(function(){
+                    setErrorMessage("");
+                    setShowButton(true);
+                },1000)
+            }
+        })
+        .catch((err) => console.log(err))
         setMessageInfo({lastname: "", firstname: "", email:"", content:""})
     }
 
@@ -58,7 +73,11 @@ function Contact() {
                                 onChange={(e) => setMessageInfo({...messageInfo, content: e.target.value})}>
                             </textarea>
                         </div>
-                        <button type="submit">Envoyer</button>
+                        {showButton ? 
+                        <button type="submit">Envoyer</button> : 
+                        <p className="success-message">{errorMessage}</p>                        
+                        }
+
                     </form>
                 </div>
             </div>
