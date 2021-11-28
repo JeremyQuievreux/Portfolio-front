@@ -7,8 +7,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 function About() {
     return (
-        <section className="about-main-container">
-            <div className="about-container" id="about">
+        <section className="about-main-container"id="about">
+            <div className="about-container" >
                 <div className="about-left-block">
                     <h1>Bonjour, je suis Jérémy</h1>
                     <h1>Developpeur Fullstack Javascript</h1>
@@ -29,7 +29,7 @@ function About() {
                         <a href="https://www.linkedin.com/in/jeremy-quievreux-22b2a9225/" target="_blank"><FaLinkedin/></a>
                     </div>
                 </div>
-            </div>
+            </div>         
         </section>
     )
 }

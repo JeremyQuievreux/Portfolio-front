@@ -26,7 +26,10 @@ function Navbar() {
                 setShowMenu(!showMenu)
             },900)
         }
+    }
 
+    const closeMenu = () => {
+        setShowMenu(false);
     }
 
     return (
@@ -44,12 +47,12 @@ function Navbar() {
                     <p><MdMenu size="3em"/></p>
                 </div>
                 {showMenu && 
-                    <div className="drop-down-menu">
-                        <a href="#about" ><p><AiOutlineHome/>Accueil</p></a>
-                        <a href="#skills" ><p><IoHardwareChipSharp/>Compétences</p></a>
-                        <a href="#projects" ><p><FaLaptopCode/>Mes projets</p></a>
-                        <a href="#contact" ><p><FiMail/>Me contacter</p></a>
-                        <a  href={monCv} download="CV_Quievreux_Jeremy" ><p className="btn-cv">Mon CV</p></a>
+                    <div className="drop-down-menu" >
+                        <a href="#about" ><p onClick={closeMenu}><AiOutlineHome/>Accueil</p></a>
+                        <a href="#skills" ><p onClick={closeMenu}><IoHardwareChipSharp/>Compétences</p></a>
+                        <a href="#projects" ><p onClick={closeMenu}><FaLaptopCode/>Mes projets</p></a>
+                        <a href="#contact" ><p onClick={closeMenu}><FiMail/>Me contacter</p></a>
+                        <a  href={monCv} download="CV_Quievreux_Jeremy" ><p className="btn-cv" onClick={closeMenu}>Mon CV</p></a>
                     </div>
                 }
             </div>
