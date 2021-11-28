@@ -1,0 +1,25 @@
+@import '../master.scss';
+
+.footer-main-container{
+    background-color: $primary;
+    color:$secondary;
+    width: 100%;
+    border-top: 1px solid $secondary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .footer-icons{
+        display: flex;
+        align-items: center;
+        a{
+            color: inherit;
+            height: 30px;
+        }
+        svg{
+            height: 30px;
+            width: 30px;
+            margin-left: 20px;
+        }
+    }
+}
