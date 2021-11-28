@@ -2,14 +2,16 @@ import React from 'react';
 import './About.scss';
 
 import maggle from "../img/maggle.jpg"
+import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 function About() {
     return (
-        <div className="about-main-container">
-            <section className="about-container" id="about">
+        <section className="about-main-container">
+            <div className="about-container" id="about">
                 <div className="about-left-block">
                     <h1>Bonjour, je suis Jérémy</h1>
-                    <h1>Developpeur Fullstack Javascript Junior</h1>
+                    <h1>Developpeur Fullstack Javascript</h1>
                     <p>Ancien Assistant Manager et passionné d'informatique depuis toujours , je me suis 
                         lancé dans une reconvertion profesionnelle dans le domaine du 
                         Developpement Web / Mobile en 2019.</p>
@@ -19,10 +21,16 @@ function About() {
                         Developpeur Fullstack Javascript.</p>
                 </div>
                 <div className="about-right-block">
-                    <img src={maggle} alt="" />
+                    <div className="img-container">
+                        <img src={maggle} alt="" />
+                    </div>
+                    <div className="icons-container">
+                        <a href="https://github.com/JeremyQuievreux" target="_blank"><FaGithubSquare/></a>
+                        <a href="https://www.linkedin.com/in/jeremy-quievreux-22b2a9225/" target="_blank"><FaLinkedin/></a>
+                    </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     )
 }
 
