@@ -22,9 +22,11 @@ function Projects() {
                 </div>
                 <div className="projects-list-container">
                     <div className="projects-item">
-                        <div className="project-item-img">
-                            <img src={imgProjet1} alt="" />
-                        </div>
+                        <a href="https://github.com/JeremyQuievreux/UpdownStreet-Front" target="_blank">
+                            <div className="project-item-img">
+                                <img src={imgProjet1} alt="" />
+                            </div>
+                        </a>
                         <div className="project-info">
                             <div className="project-title">
                                 <h3>Up Down Street</h3>
@@ -37,9 +39,11 @@ function Projects() {
                         </div>
                     </div>
                     <div className="projects-item">
-                        <div className="project-item-img">
-                            <img src={imgProjet2} alt="" />
-                        </div>
+                        <a href="https://github.com/JeremyQuievreux/PokeRandomV1" target="_blank">
+                            <div className="project-item-img">
+                                <img src={imgProjet2} alt="" />
+                            </div>
+                        </a>
                         <div className="project-info">
                             <div className="project-title">
                                 <h3>PokeRandom</h3>
@@ -52,9 +56,11 @@ function Projects() {
                         </div>
                     </div>
                     <div className="projects-item">
-                        <div className="project-item-img">
-                            <img src={imgProjet3} alt="" />
-                        </div>
+                        <a href="https://github.com/JeremyQuievreux/ScoreApp" target="_blank">
+                            <div className="project-item-img">
+                                <img src={imgProjet3} alt="" />
+                            </div>
+                        </a>
                         <div className="project-info">
                             <div className="project-title">
                                 <h3>Rate'N'Eat</h3>
@@ -67,9 +73,11 @@ function Projects() {
                         </div>
                     </div>
                     <div className="projects-item">
-                        <div className="project-item-img">
-                            <img src={imgProjet4} alt="" />
-                        </div>
+                        <a href="https://github.com/JeremyQuievreux/AppMeteoV2" target="_blank">
+                            <div className="project-item-img">
+                                <img src={imgProjet4} alt="" />
+                            </div>
+                        </a>
                         <div className="project-info">
                             <div className="project-title">
                                 <h3>Le Bocal Météo</h3>
@@ -82,9 +90,11 @@ function Projects() {
                         </div>
                     </div>
                     <div className="projects-item">
+                        <a href="https://github.com/JeremyQuievreux/TodoListV2" target="_blank">
                         <div className="project-item-img">
                             <img src={imgProjet5} alt="" />
                         </div>
+                        </a>
                         <div className="project-info">
                             <div className="project-title">
                                 <h3>ToDo List</h3>
@@ -97,9 +107,11 @@ function Projects() {
                         </div>
                     </div>
                     <div className="projects-item">
+                        <a href="https://github.com/JeremyQuievreux/RGuitar-Shop" target="_blank">
                         <div className="project-item-img">
                             <img src={imgProjet6} alt="" />
                         </div>
+                        </a>
                         <div className="project-info">
                             <div className="project-title">
                                 <h3>R'Guitare Shop</h3>
