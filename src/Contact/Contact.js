@@ -16,7 +16,8 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        Axios.post("http://localhost:1337/sendmessage",  
+        const url = "https://portfolio-back.osc-fr1.scalingo.io" || "http://localhost:1337"
+        Axios.post(`${url}/sendmessage`,  
         messageInfo )
         .then((res) => {
             if (!res.data.error) {
