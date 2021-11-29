@@ -96,6 +96,31 @@
             }
         }
     }
+    .contact-block{
+        background-color: $tier2;
+        width: 50%;
+        max-width: 600px;
+        border: 1px solid $primary;
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 3px;
+        a{
+            text-decoration: none;
+            color: $secondary;
+        }
+        svg{
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+    }
 }
 
 @media (max-width: 1024px) {

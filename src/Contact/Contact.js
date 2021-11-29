@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import Axios from 'axios';
 
 import { FiMail } from "react-icons/fi";
+import { GiSmartphone } from "react-icons/gi";
 
 
 function Contact() {
@@ -37,6 +38,10 @@ function Contact() {
                 <div className="contact-icon-container">
                     <FiMail/>
                     <h2>Contact</h2>
+                </div>
+                <div className="contact-block">
+                    <a href="tel:+0628517107"><p><GiSmartphone/> 06 28 51 71 07</p></a>
+                    <a href="mailto:jquievreux.devpro@gmail.com"><p><FiMail/> jquievreux.devpro@gmail.com</p></a>
                 </div>
                 <div className="contact-form">
                     <form onSubmit={(e) => handleSubmit(e)}>
