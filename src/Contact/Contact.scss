@@ -129,6 +129,19 @@
             .contact-form{
                 width: 60%;
             }
+            .contact-block{
+                width: 60%;
+            }
+        }
+    }
+}
+@media (max-width: 850px) {
+    .contact-main-container{
+        .contact-container{
+            .contact-block{
+                flex-direction: column;
+                width: 60%;
+            }
         }
     }
 }
@@ -138,6 +151,9 @@
             .contact-form{
                 width: 70%;
             }
+            .contact-block{
+                width: 70%;
+            }
         }
     }
 }
@@ -145,6 +161,9 @@
     .contact-main-container{
         .contact-container{
             .contact-form{
+                width: 95%;
+            }
+            .contact-block{
                 width: 95%;
             }
         }
