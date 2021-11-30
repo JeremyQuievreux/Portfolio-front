@@ -25,8 +25,8 @@ function About() {
                         <img src={maggle} alt="" />
                     </div>
                     <div className="icons-container">
-                        <a href="https://github.com/JeremyQuievreux" target="_blank"><FaGithubSquare/></a>
-                        <a href="https://www.linkedin.com/in/jeremy-quievreux-22b2a9225/" target="_blank"><FaLinkedin/></a>
+                        <a href="https://github.com/JeremyQuievreux" target="_blank" rel="noreferrer"><FaGithubSquare/></a>
+                        <a href="https://www.linkedin.com/in/jeremy-quievreux-22b2a9225/" target="_blank" rel="noreferrer"><FaLinkedin/></a>
                     </div>
                 </div>
             </div>         

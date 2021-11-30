@@ -22,7 +22,7 @@ function Projects() {
                 </div>
                 <div className="projects-list-container">
                     <div className="projects-item">
-                        <a href="https://github.com/JeremyQuievreux/UpdownStreet-Front" target="_blank">
+                        <a href="https://github.com/JeremyQuievreux/UpdownStreet-Front" target="_blank" rel="noreferrer">
                             <div className="project-item-img">
                                 <img src={imgProjet1} alt="" />
                             </div>
@@ -39,7 +39,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="projects-item">
-                        <a href="https://github.com/JeremyQuievreux/PokeRandomV1" target="_blank">
+                        <a href="https://github.com/JeremyQuievreux/PokeRandomV1" target="_blank" rel="noreferrer">
                             <div className="project-item-img">
                                 <img src={imgProjet2} alt="" />
                             </div>
@@ -56,7 +56,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="projects-item">
-                        <a href="https://github.com/JeremyQuievreux/ScoreApp" target="_blank">
+                        <a href="https://github.com/JeremyQuievreux/ScoreApp" target="_blank" rel="noreferrer">
                             <div className="project-item-img">
                                 <img src={imgProjet3} alt="" />
                             </div>
@@ -73,7 +73,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="projects-item">
-                        <a href="https://github.com/JeremyQuievreux/AppMeteoV2" target="_blank">
+                        <a href="https://github.com/JeremyQuievreux/AppMeteoV2" target="_blank" rel="noreferrer">
                             <div className="project-item-img">
                                 <img src={imgProjet4} alt="" />
                             </div>
@@ -90,7 +90,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="projects-item">
-                        <a href="https://github.com/JeremyQuievreux/TodoListV2" target="_blank">
+                        <a href="https://github.com/JeremyQuievreux/TodoListV2" target="_blank" rel="noreferrer">
                         <div className="project-item-img">
                             <img src={imgProjet5} alt="" />
                         </div>
@@ -107,7 +107,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="projects-item">
-                        <a href="https://github.com/JeremyQuievreux/RGuitar-Shop" target="_blank">
+                        <a href="https://github.com/JeremyQuievreux/RGuitar-Shop" target="_blank" rel="noreferrer">
                         <div className="project-item-img">
                             <img src={imgProjet6} alt="" />
                         </div>
