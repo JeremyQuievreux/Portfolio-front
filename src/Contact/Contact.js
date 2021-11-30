@@ -1,5 +1,4 @@
 import './Contact.scss';
-import './Contact.css';
 
 import React, { useState } from 'react'
 import Axios from 'axios';
