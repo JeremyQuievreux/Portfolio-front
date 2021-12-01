@@ -123,7 +123,7 @@
     }
 }
 
-@media screen , (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .contact-main-container{
         .contact-container{
             .contact-form{
@@ -135,7 +135,7 @@
         }
     }
 }
-@media screen , (max-width: 850px) {
+@media screen and (max-width: 850px) {
     .contact-main-container{
         .contact-container{
             .contact-block{
@@ -145,7 +145,7 @@
         }
     }
 }
-@media screen , (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact-main-container{
         .contact-container{
             .contact-form{
@@ -157,7 +157,7 @@
         }
     }
 }
-@media screen , (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .contact-main-container{
         .contact-container{
             .contact-form{
