@@ -90,7 +90,7 @@
 }
 
 
-@media (max-width: 630px) {
+@media all and (max-device-width: 630px) {
     .about-main-container{
         
         .about-container{

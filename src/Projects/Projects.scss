@@ -85,14 +85,14 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media all and (max-device-width: 1024px) {
     .projects-main-container{
         .projects-container{
             width: 100%;
         }
     }
 }
-@media  (max-width: 900px) {
+@media all and  (max-device-width: 900px) {
     .projects-main-container{
         .projects-container{
             .projects-list-container{
@@ -103,7 +103,7 @@
         }
     }
 }
-@media  (max-width: 500px) {
+@media all and  (max-device-width: 500px) {
     .projects-main-container{
         .projects-container{
             .projects-list-container{
