@@ -142,13 +142,13 @@
 }
 
 
-@media (max-width: 930px) {
+@media screen and (max-width: 930px) {
     .navbar-container{
         flex-direction: column;
     }
     
 }
-@media (max-width: 660px) {
+@media screen and (max-width: 660px) {
     .navbar-container{
         flex-direction: row;
         .menu-desktop{
@@ -160,7 +160,7 @@
     }
 
 }
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
     .navbar-container{
         .menu-mobile{
             .drop-down-menu{
@@ -170,7 +170,7 @@
     }
 
 }
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
     .navbar-container{
         .navbar-title{
             font-size: 25px;
