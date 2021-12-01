@@ -1,29 +1,5 @@
 @import '../master.scss';
 
-@keyframes slidetoright {
-    from {
-      transform: translateX(-150%);
-      opacity: 0;
-    }
-  
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes slidedown {
-    from {
-      transform: translateY(-100%);
-      opacity: 0;
-
-    }
-  
-    to {
-        transform: translateY(0);
-        opacity: 1;
-
-    }
-}
 
 .about-main-container{
     width: 100%;
