@@ -1,8 +1,6 @@
-//style
 import './Skills.scss';
-//base React
+
 import React from 'react'
-//React cons
 import { IoHardwareChipSharp } from "react-icons/io5";
 import { CgScreen } from "react-icons/cg";
 import { FiDatabase } from "react-icons/fi";

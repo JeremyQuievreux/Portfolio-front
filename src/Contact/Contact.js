@@ -1,27 +1,23 @@
-//style
 import './Contact.scss';
-//base React + dep
+
 import React, { useState } from 'react'
 import Axios from 'axios';
-//icons React
+
 import { FiMail } from "react-icons/fi";
 import { GiSmartphone } from "react-icons/gi";
 
 
 function Contact() {
 
-    //objet state to send to db
     const [messageInfo, setMessageInfo] = useState({lastname: "", firstname: "", email:"", content:""});
-    //responce message after request db
     const [errorMessage, setErrorMessage] = useState('');
-    //toggle send button
     const [showButton, setShowButton] = useState(true);
 
-    //request to send data to db
     const handleSubmit = (e) => {
         e.preventDefault();
         const url = "https://portfolio-back.osc-fr1.scalingo.io" || "http://localhost:1337"
-        Axios.post(`${url}/sendmessage`, messageInfo )
+        Axios.post(`${url}/sendmessage`,  
+        messageInfo )
         .then((res) => {
             if (!res.data.error) {
                 setErrorMessage(res.data.message);

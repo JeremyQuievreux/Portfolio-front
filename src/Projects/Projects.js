@@ -1,10 +1,8 @@
-//style
 import './Projects.scss';
-//base React
+
 import React from 'react'
-//React icons
 import { FaLaptopCode } from "react-icons/fa";
-//preview projets
+
 import imgProjet1 from "../img/uds1.png";
 import imgProjet2 from "../img/pkm3.png";
 import imgProjet3 from "../img/smf1.png";

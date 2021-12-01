@@ -1,6 +1,5 @@
-//style
 import './App.scss';
-//composants
+
 import Navbar from './Navbar/Navbar';
 import About from './About/About';
 import Skills from './Skills/Skills';
