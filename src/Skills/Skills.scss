@@ -59,7 +59,7 @@
     }
     
 }
-@media (max-width: 680px) {
+@media screen , (max-width: 680px) {
     .skills-main-container{
         .skills-container{
             width: 90%;
@@ -68,7 +68,7 @@
 }
 
 
-@media (max-width: 610px) {
+@media screen , (max-width: 610px) {
     .skills-main-container{
         .skills-block{
             flex-direction: column;
@@ -79,7 +79,7 @@
 
     }
 }
-@media (max-width: 375px) {
+@media screen , (max-width: 375px) {
     .skills-main-container{
         .skills-icon-container{
             h2{
@@ -88,7 +88,7 @@
         }
     }
 }
-@media (max-width: 320px) {
+@media screen , (max-width: 320px) {
     .skills-main-container{
         .skills-icon-container{
             h2{
