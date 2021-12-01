@@ -1,21 +1,23 @@
-import React, { useState } from 'react';
+//style
 import './Navbar.scss';
-
+// base react
+import React, { useState } from 'react';
+// import icons
 import { MdMenu } from "react-icons/md";
 import { AiOutlineHome } from "react-icons/ai";
 import { FiMail } from "react-icons/fi";
 import { IoHardwareChipSharp } from "react-icons/io5";
 import { FaLaptopCode } from "react-icons/fa";
-
+// CV
 import monCv from '../img/CV_Quievreux_Jeremy.pdf';
 
 
 
 
 function Navbar() {
-
+    //state affichage menu en mode mobile
     const [showMenu, setShowMenu] = useState(false)
-
+    //fonction toggle
     const hideMenu = (e) => {
         if (!showMenu) {
             setShowMenu(!showMenu)
@@ -27,7 +29,7 @@ function Navbar() {
             },900)
         }
     }
-
+    //fonction fermeture 
     const closeMenu = () => {
         setShowMenu(false);
     }

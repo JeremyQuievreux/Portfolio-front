@@ -1,7 +1,10 @@
-import React from 'react';
+//style
 import './About.scss';
-
+//base react
+import React from 'react';
+//photo
 import maggle from "../img/maggle.jpg"
+//icons react
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 

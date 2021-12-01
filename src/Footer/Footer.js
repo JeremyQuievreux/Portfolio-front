@@ -1,7 +1,8 @@
+//style
 import './Footer.scss';
-
+//base React
 import React from 'react'
-
+//React icons
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
