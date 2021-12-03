@@ -20,6 +20,7 @@ function Contact() {
     //request to send data to db
     const handleSubmit = (e) => {
         e.preventDefault();
+
         const url = "https://portfolio-back.osc-fr1.scalingo.io";
         Axios.post(`${url}/messages/send`, messageInfo )
         .then((res) => {
