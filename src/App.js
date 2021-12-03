@@ -12,7 +12,6 @@ import Footer from './Footer/Footer';
 import Admin from './Admin/Admin';
 import ErrorPage from './ErrorPage/ErrorPage';
 
-
 function App() {
   return (
     <div className="app">
