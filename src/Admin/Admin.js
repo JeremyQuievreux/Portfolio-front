@@ -12,7 +12,7 @@ function Admin() {
     const [password, setPassword] = useState("");
     const [allMessages, setAllMessages] = useState();
 
-    let url = `http://localhost:1337` || `https://portfolio-back.osc-fr1.scalingo.io` 
+    let url = `https://portfolio-back.osc-fr1.scalingo.io` 
 
     //request to send data to db
     const handleSubmitPassword = (e) => {
