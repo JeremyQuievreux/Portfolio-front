@@ -42,6 +42,7 @@ function Navbar() {
                 <a href="#skills" ><p><IoHardwareChipSharp/>Compétences</p></a>
                 <a href="#projects" ><p><FaLaptopCode/>Mes projets</p></a>
                 <a href="#contact" ><p><FiMail/>Me contacter</p></a>
+                <a href="/admin" ><p><FiMail/>Admin</p></a>
                 <a href={monCv} download="CV_Quievreux_Jeremy" ><p className="btn-cv">Mon CV</p></a>
             </div>
             <div className="menu-mobile">
