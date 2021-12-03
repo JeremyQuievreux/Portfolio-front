@@ -4,7 +4,7 @@ import Axios from 'axios';
 
 
 import { BsFillShieldLockFill } from "react-icons/bs";
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 
 
 function Admin() {
