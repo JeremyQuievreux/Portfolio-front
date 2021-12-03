@@ -21,7 +21,7 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const url = "https://portfolio-back.osc-fr1.scalingo.io";
-        Axios.post(`${url}/sendmessage`, messageInfo )
+        Axios.post(`${url}/messages/send`, messageInfo )
         .then((res) => {
             if (!res.data.error) {
                 setErrorMessage(res.data.message);
