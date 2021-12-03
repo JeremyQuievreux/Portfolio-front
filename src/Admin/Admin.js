@@ -46,9 +46,9 @@ function Admin() {
             </form>
             {allMessages && 
                 <div className="messages-container">
-                    {allMessages.map((message) => {
+                    {allMessages.map((message, index) => {
                         return(
-                            <div className="message-container">
+                            <div className="message-container" key={index}>
                                 <p>{message.lastname}</p>
                                 <p>{message.firstname}</p>
                                 <p>{message.email}</p>
