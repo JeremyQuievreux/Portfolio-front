@@ -1,10 +1,20 @@
 import './Admin.scss';
 
 import { BsFillShieldLockFill } from "react-icons/bs";
+import { useState } from 'react';
 
 
 function Admin() {
 
+    const [password, setPassword] = useState("");
+
+    const [allMessages, setAllMessages] = useState();
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(password);
+        setPassword("");
+    }
 
     return (
         <div className="admin-page-main-container">
@@ -13,15 +23,18 @@ function Admin() {
                 <h1>Admin Page</h1>
                 <BsFillShieldLockFill/>
             </div>
-            <div className="form-admin-container">
-                <form className="form-admin">
-                    <div className="form-admin-line">
-                        <label htmlFor="password">Admin Password : </label>
-                        <input type="password" name="password" id="password" />
-                    </div>
-                    <button>Valider</button>
-                </form>
-            </div>
+            <form className="form-admin" onSubmit={(e)=>handleSubmit(e)}>
+                <div className="form-admin-line">
+                    <label htmlFor="password">Admin Password : </label>
+                    <input type="password" 
+                        value={password} 
+                        placeholder="enter password"
+                        name="password" 
+                        id="password" 
+                        onChange={(e)=>setPassword(e.target.value)}/>
+                </div>
+                <button type="submit">Valider</button>
+            </form>
         </div>
     )
 }
