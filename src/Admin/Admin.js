@@ -1,18 +1,27 @@
 import './Admin.scss';
 
+import Axios from 'axios';
+
+
 import { BsFillShieldLockFill } from "react-icons/bs";
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 
 
 function Admin() {
 
     const [password, setPassword] = useState("");
-
     const [allMessages, setAllMessages] = useState();
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(password);
+    let url = `http://localhost:1337` || `https://portfolio-back.osc-fr1.scalingo.io` 
+
+    //request to send data to db
+    const handleSubmitPassword = (e) => {
+        e.preventDefault();
+        Axios.post(`${url}/messages/all`, {password})
+        .then((res) => {
+            setAllMessages(res.data.data)
+        })
+        .catch((err) => console.log(err))
         setPassword("");
     }
 
@@ -23,7 +32,7 @@ function Admin() {
                 <h1>Admin Page</h1>
                 <BsFillShieldLockFill/>
             </div>
-            <form className="form-admin" onSubmit={(e)=>handleSubmit(e)}>
+            <form className="form-admin" onSubmit={(e)=>handleSubmitPassword(e)}>
                 <div className="form-admin-line">
                     <label htmlFor="password">Admin Password : </label>
                     <input type="password" 
@@ -35,6 +44,20 @@ function Admin() {
                 </div>
                 <button type="submit">Valider</button>
             </form>
+            {allMessages && 
+                <div className="messages-container">
+                    {allMessages.map((message) => {
+                        return(
+                            <div className="message-container">
+                                <p>{message.lastname}</p>
+                                <p>{message.firstname}</p>
+                                <p>{message.email}</p>
+                                <p>{message.content}</p>
+                            </div>
+                        )
+                    })}
+                </div>
+            }
         </div>
     )
 }
