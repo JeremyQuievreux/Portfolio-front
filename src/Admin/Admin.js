@@ -3,6 +3,8 @@ import Axios from 'axios';
 //React Icons
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { useState } from 'react';
+//Componants
+import AdminMessage from './AdminMessage';
 
 function Admin() {
 
@@ -28,6 +30,7 @@ function Admin() {
         })
         .catch((err) => console.log(err))
         setPassword("");
+        setAllMessages();
     }
 
     return (
@@ -49,26 +52,18 @@ function Admin() {
                 </div>
                 <button type="submit">Valider</button>
             </form>
+            {/* error message */}
             {errorMessage &&
                 <div className="error-message">
                     <p>{errorMessage}</p>
                 </div>
             }
+            {/* mapping of messages */}
             {allMessages && 
                 <div className="messages-container">
                     {allMessages.map((message, index) => {
                         return(
-                            <div className="message-container" key={index}>
-                                <div className="name-line">
-                                    <p>Message de {message.firstname} {message.lastname}</p>
-                                </div>
-                                <div className="message-line">
-                                    <p>{message.content}</p>
-                                </div>
-                                <div className="mail-line">
-                                    <p>Contacter  : {message.email}</p>
-                                </div>
-                            </div>
+                            <AdminMessage message_data={message} key={index}/>
                         )
                     })}
                 </div>
