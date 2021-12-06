@@ -9,10 +9,8 @@ import { FiDatabase } from "react-icons/fi";
 import { VscTools } from "react-icons/vsc";
 import { BsCheckSquareFill } from "react-icons/bs";
 
-
 function Skills() {
 
-    
     return (
         <div className="skills-main-container" id="skills">
             <div className="skills-container">

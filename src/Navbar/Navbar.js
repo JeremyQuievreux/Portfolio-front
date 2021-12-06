@@ -11,9 +11,6 @@ import { FaLaptopCode } from "react-icons/fa";
 // CV
 import monCv from '../img/CV_Quievreux_Jeremy.pdf';
 
-
-
-
 function Navbar() {
     //state affichage menu en mode mobile
     const [showMenu, setShowMenu] = useState(false)
@@ -33,7 +30,6 @@ function Navbar() {
     const closeMenu = () => {
         setShowMenu(false);
     }
-
     return (
         <nav className="navbar-container">
             <h1 className="navbar-title">QUI&Eacute;VREUX Jérémy</h1>
