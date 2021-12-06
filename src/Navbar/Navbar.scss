@@ -31,6 +31,7 @@
     padding: 0 20px;
     border-bottom: 2px solid $secondary;
     position: fixed;
+    z-index: 10;
     .navbar-title{
         font-size: 35px;
     }
