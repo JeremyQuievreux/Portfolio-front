@@ -19,7 +19,7 @@ function About() {
                         lancé dans une reconvertion profesionnelle dans le domaine du 
                         Developpement Web / Mobile en 2019.</p>
                     <p>J'ai commencé à me former en autodidacte grace à des sites comme 
-                        Grafikart, OpenClassRoom, Udemy. J'ai ensuite intégrer le  centre de 
+                        Grafikart, OpenClassRoom, Udemy. J'ai ensuite intégré le  centre de 
                         formation du Bocal Academy Nice, pour y suivre la formation de 
                         Developpeur Fullstack Javascript.</p>
                 </div>

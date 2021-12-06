@@ -62,10 +62,15 @@ function Admin() {
                     {allMessages.map((message, index) => {
                         return(
                             <div className="message-container" key={index}>
-                                <p>{message.lastname}</p>
-                                <p>{message.firstname}</p>
-                                <p>{message.email}</p>
-                                <p>{message.content}</p>
+                                <div className="name-line">
+                                    <p>Message de {message.firstname} {message.lastname}</p>
+                                </div>
+                                <div className="message-line">
+                                    <p>{message.content}</p>
+                                </div>
+                                <div className="mail-line">
+                                    <p>Contacter  : {message.email}</p>
+                                </div>
                             </div>
                         )
                     })}

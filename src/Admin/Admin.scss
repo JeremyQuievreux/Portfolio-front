@@ -66,16 +66,46 @@
             }
         }
         .messages-container{
-            border: 2px solid white;
+            border: 1px solid $primary;
+            border-radius: 3px;
             background-color: $tier2;
             width: 80%;
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
+            margin: 20px;
+            padding: 20px;
             .message-container{
-                height: 200px;
-                width: 200px;
-                background-color: white;
-                margin: 10px;
+                border: 1px solid $primary;
+                border-radius: 3px;
+                background-color: $tier4;
+                margin: 10px 0;
+                .name-line{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-bottom: 1px solid $primary;
+                    background-color: $tier3;
+                    min-height: 30px;
+                    text-decoration: underline;
+                }
+                .mail-line{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    min-height: 30px;
+                    padding-right: 20px;
+                    background-color: $tier3;
+
+                }
+                .message-line{
+                    border-bottom: 1px solid $primary;
+                    min-height: 50px;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    text-align: justify;
+                }
             }
         }
     

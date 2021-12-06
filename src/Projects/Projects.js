@@ -35,7 +35,7 @@ function Projects() {
                                 <h3>Novembre 2021</h3>
                             </div>
                             <div className="project-description">
-                                <p>Site web de cruwnfunding de bien immobilier, sous forme de token NFT</p>
+                                <p>Réalisation en équipe, d'une application web de crowdfunding sous forme de token NFT dans le domaine de l'immobilier. </p>
                                 <p className="techno">React / Sass / Node / Express / MongoDB</p>
                             </div>
                         </div>
