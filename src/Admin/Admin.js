@@ -11,6 +11,7 @@ function Admin() {
 
     const [password, setPassword] = useState("");
     const [allMessages, setAllMessages] = useState();
+    const [errorMessage, setErrorMessage] = useState();
 
     let url = `https://portfolio-back.osc-fr1.scalingo.io` 
 
@@ -19,7 +20,14 @@ function Admin() {
         e.preventDefault();
         Axios.post(`${url}/messages/all`, {password})
         .then((res) => {
-            setAllMessages(res.data.data)
+            if (!res.data.error) {
+                setAllMessages(res.data.data)
+            } else {
+                setErrorMessage("Mauvais mot de passe");
+                setTimeout(function(){
+                    setErrorMessage();
+                }, 1500)
+            }
         })
         .catch((err) => console.log(err))
         setPassword("");
@@ -44,6 +52,11 @@ function Admin() {
                 </div>
                 <button type="submit">Valider</button>
             </form>
+            {errorMessage &&
+                <div className="error-message">
+                    <p>{errorMessage}</p>
+                </div>
+            }
             {allMessages && 
                 <div className="messages-container">
                     {allMessages.map((message, index) => {

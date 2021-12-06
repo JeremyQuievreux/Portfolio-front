@@ -14,6 +14,9 @@
         align-items: center;
         margin-top: 10px;
         margin-bottom: 30px;
+        h1{
+            text-align: center;
+        }
         svg{
             width: 50px;
             height: 50px;
@@ -49,6 +52,19 @@
                 height: 30px;
             }
         }
+        .error-message{
+            background-color: $tier2;
+            margin: 20px;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            border: 1px solid $primary;
+            p{
+                margin: 10px;
+            }
+        }
         .messages-container{
             border: 2px solid white;
             background-color: $tier2;
@@ -63,4 +79,34 @@
             }
         }
     
+}
+@media (max-width: 1024px) {
+    .admin-page-main-container{
+        .form-admin{
+            width: 50%;
+        }
+        .error-message{
+            width: 50%;
+        }
+    }
+}
+@media (max-width: 465px) {
+    .admin-page-main-container{
+        .form-admin{
+            width: 70%;
+        }
+        .error-message{
+            width: 70%;
+        }
+    }
+}
+@media (max-width: 350px) {
+    .admin-page-main-container{
+        .form-admin{
+            width: 90%;
+        }
+        .error-message{
+            width: 90%;
+        }
+    }
 }
