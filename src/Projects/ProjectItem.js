@@ -35,8 +35,15 @@ function ProjectItem({project}) {
                     <p>{project.description}</p>
                     <p className="techno">{project.technos}</p>
                 </div>
-                <div className="project-link">
-                <a href={project.link} target="_blank" rel="noreferrer"><FaGithubSquare/></a>
+                <div className="project-links-container">
+                    {project.links.map((projectLink) => {
+                        return(
+                            <div className="project-link">
+                                <a href={projectLink.link} target="_blank" rel="noreferrer"><FaGithubSquare/></a>
+                                <p>{projectLink.side}</p>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </div>

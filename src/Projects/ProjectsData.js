@@ -37,7 +37,16 @@ export const projects = [
         date: "Novembre 2021",
         description: "Réalisation en équipe, d'une application web de crowdfunding sous forme de token NFT dans le domaine de l'immobilier.",
         technos: "React / Sass / Node / Express / MongoDB",
-        link: "https://github.com/JeremyQuievreux/UpdownStreet-Front",
+        links: [
+            {
+                side: "Front",
+                link: "https://github.com/JeremyQuievreux/UpdownStreet-Front"
+            },
+            {
+                side: "Back",
+                link: "https://github.com/JeremyQuievreux/UpdownStreet-Back"
+            }
+        ],
         slides: [updownstreet1,updownstreet2,updownstreet3,updownstreet4,updownstreet5]
     },
     {
@@ -45,7 +54,12 @@ export const projects = [
         date: "Octobre 2021",
         description: `Site sur le theme des pokémons, avec systeme d'authentification, obtention de "carte" random quotidienne, page "boutique", page collection utilisateur.`,
         technos: "React / Sass / Node / Express / MongoDB / API (perso)",
-        link: "https://github.com/JeremyQuievreux/PokeRandomV1",
+        links: [
+            {
+                side: "Front & Back",
+                link: "https://github.com/JeremyQuievreux/PokeRandomV1"
+            }
+        ],
         slides: [pokemon1,pokemon2,pokemon3,pokemon4]
     },
     {
@@ -53,7 +67,12 @@ export const projects = [
         date: "Octobre 2021",
         description: "Application mobile de notation (nutriScore et ecoScore) d'articles alimentaires grace aux codes barres (scannés ou entrés manuellement).",
         technos: "React Native / API (openfoodfact)",
-        link: "https://github.com/JeremyQuievreux/ScoreApp",
+        links: [
+            {
+                side: "Front",
+                link: "https://github.com/JeremyQuievreux/ScoreApp"
+            }
+        ],
         slides: [scoremyfood1,scoremyfood2,scoremyfood3,scoremyfood4,scoremyfood5,scoremyfood6]
     },
     {
@@ -61,7 +80,12 @@ export const projects = [
         date: "Octobre 2021",
         description: "Application mobile météoroligique, obtention de la météo (instant T, prochaines 24h, 7 prochains jours), grace a la géolocalisation ou par recherche de ville.",
         technos: "ReactNative / API (openweather)",
-        link: "https://github.com/JeremyQuievreux/AppMeteoV2",
+        links: [
+            {
+                side: "Front",
+                link: "https://github.com/JeremyQuievreux/AppMeteoV2"
+            }
+        ],
         slides: [meteo1,meteo2,meteo3,meteo4,meteo5,meteo6,meteo7]
     },
     {
@@ -69,7 +93,12 @@ export const projects = [
         date: "Octobre 2021",
         description: "La classique ToDo List, sous forme de Post-It rangée en plusieurs catégories selon l'état d'avancement, et stockée dans le localStorage.",
         technos: "React / Sass",
-        link: "https://github.com/JeremyQuievreux/TodoListV2",
+        links: [
+            {
+                side: "Front",
+                link: "https://github.com/JeremyQuievreux/TodoListV2"
+            }
+        ],
         slides: [todo1]
     },
     {
@@ -77,7 +106,12 @@ export const projects = [
         date: "Septembre 2021",
         description: "Site vitrine pour un boutique en ligne de guitare, avec page d'accueil, page de contact, page catalogue de la boutique",
         technos: "HTML / CSS / Sass",
-        link: "https://github.com/JeremyQuievreux/RGuitar-Shop",
+        links: [
+            {
+                side: "Front",
+                link: "https://github.com/JeremyQuievreux/RGuitar-Shop"
+            }
+        ],
         slides: [rguitare1,rguitare2,rguitare3,rguitare4]
     },
 ]

@@ -55,6 +55,9 @@
             justify-content: center;
             a{
                 color: $secondary;
+                &:hover{
+                    color: white;
+                }
             }
             svg{
                 width: 50px;

@@ -35,9 +35,6 @@
                 flex-direction: column;
                 align-items: flex-end;
                 overflow: hidden;
-                a{
-                    width: 100%;
-                }
                 .dot{
                     background-color: $secondary;
                 }
@@ -89,17 +86,33 @@
                         }
                     }
                     
-                    .project-link{
-                        a{
+                    .project-links-container{
+                        display: flex;
+                        justify-content: flex-end;
+                        .project-link{
                             display: flex;
-                            justify-content: flex-end;
-                            align-items: center;
-                            margin-bottom: 10px;
-                            color: $secondary;
-                            svg{
-                                height: 30px;
-                                width: 30px;
-                                margin-right: 10px;
+                            margin: 5px;
+                            &:hover{
+                                a{
+                                    color: $primary;
+                                }
+                                color: $primary;
+                            }
+                            a{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: $secondary;
+                                svg{
+                                    height: 30px;
+                                    width: 30px;
+                                }
+                            }
+                            p{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 0 5px;
                             }
                         }
                     }
