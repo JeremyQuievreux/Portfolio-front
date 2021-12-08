@@ -1,0 +1,39 @@
+@import '../master.scss';
+
+.error-page-container{
+    width: 100%;
+    background-color: $tier2;
+    min-height: 100vh;
+    color: $secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .error-message-container{
+        text-align: center;
+        font-size: 50px;
+        background-color: $tier3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        border: 1px solid $secondary;
+        padding: 30px;
+    }
+    .top-bar{
+        height: 80px;
+        width: 100%;
+        background-color: $primary;
+        border-bottom: 1px solid $secondary;
+        margin-bottom: 10px;
+    }
+    .bottom-bar{
+        height: 80px;
+        width: 100%;
+        background-color: $primary;
+        border-top: 1px solid $secondary;
+        margin-top: 10px;
+    }
+
+}
