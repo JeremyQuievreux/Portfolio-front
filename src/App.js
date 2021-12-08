@@ -11,6 +11,7 @@ import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import Admin from './Admin/Admin';
 import ErrorPage from './ErrorPage/ErrorPage';
+import RoadMap from './RoadMap/RoadMap';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             </>
           }/>
           <Route path="/admin" element={<Admin/>}/>
+          <Route path="/road" element={<RoadMap/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
       </Router>
