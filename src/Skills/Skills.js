@@ -45,6 +45,10 @@ function Skills() {
                             <BsCheckSquareFill/>
                             <p>Vue.JS</p>
                         </div>
+                        <div className="skills-item">
+                            <BsCheckSquareFill/>
+                            <p>Redux ( ... in progress )</p>
+                        </div>
                     </div>
                     <div className="skills-underblock">
                         <h3><FiDatabase/>Backend</h3>
