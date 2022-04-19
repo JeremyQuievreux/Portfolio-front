@@ -29,9 +29,34 @@ import rguitare2 from "../img/rguitare2.png";
 import rguitare3 from "../img/rguitare3.png";
 import rguitare4 from "../img/rguitare4.png";
 
+import garden1 from "../img/garden1.JPG";
+import garden2 from "../img/garden2.JPG";
+import garden3 from "../img/garden3.JPG";
+import garden4 from "../img/garden4.JPG";
+import garden5 from "../img/garden5.JPG";
+import garden6 from "../img/garden6.JPG";
+
+
 import todo1 from "../img/todo1.png";
 
 export const projects = [
+    {
+        name: "My Little Garden",
+        date: "Avril 2022",
+        description: "Projet personel pour essayer Next.js, site e-commerce de graine aromatiques.",
+        technos: "Next.js / Sass / MongoDB / Netlify",
+        link: {
+            side: "Web",
+            link: "https://my-little-garden.netlify.app/products",
+        },
+        links: [
+            {
+                side: "Front & Back",
+                link: "https://github.com/JeremyQuievreux/my_little_garden"
+            }
+        ],
+        slides: [garden1, garden2, garden3, garden4, garden5, garden6],
+    },
     {
         name: "Up Down Street",
         date: "Novembre 2021",

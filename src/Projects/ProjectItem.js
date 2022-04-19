@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 //React Icons
 import { FaGithubSquare } from "react-icons/fa";
+import {BiWorld} from "react-icons/bi";
 
 
 
@@ -44,6 +45,12 @@ function ProjectItem({project}) {
                             </div>
                         )
                     })}
+                    {project.link &&
+                        <div className="project-link">
+                            <a href={project.link.link} target="_blank" rel="noreferrer"><BiWorld/></a>
+                            <p>{project.link.side}</p>
+                        </div>
+                    }
                 </div>
             </div>
         </div>

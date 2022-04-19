@@ -47,11 +47,11 @@ function Skills() {
                         </div>
                         <div className="skills-item">
                             <BsCheckSquareFill/>
-                            <p>Redux ( ... in progress )</p>
+                            <p>Next.JS</p>
                         </div>
                         <div className="skills-item">
                             <BsCheckSquareFill/>
-                            <p>Next.JS ( ... in progress )</p>
+                            <p>Redux ( ... in progress )</p>
                         </div>
                     </div>
                     <div className="skills-underblock">
