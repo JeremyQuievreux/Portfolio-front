@@ -51,6 +51,10 @@ function Skills() {
                         </div>
                         <div className="skills-item">
                             <BsCheckSquareFill/>
+                            <p>Typescript</p>
+                        </div>
+                        <div className="skills-item">
+                            <BsCheckSquareFill/>
                             <p>Redux ( ... in progress )</p>
                         </div>
                     </div>
@@ -89,7 +93,7 @@ function Skills() {
                         </div>
                         <div className="skills-item">
                             <BsCheckSquareFill/>
-                            <p>Postman</p>
+                            <p>Postman / Insomnia</p>
                         </div>
                         <div className="skills-item">
                             <BsCheckSquareFill/>
