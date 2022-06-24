@@ -72,6 +72,10 @@ function Skills() {
                             <BsCheckSquareFill/>
                             <p>MongoDB</p>
                         </div>
+                        <div className="skills-item">
+                            <BsCheckSquareFill/>
+                            <p>Firebase</p>
+                        </div>
                     </div>
                     <div className="skills-underblock tools">
                         <h3><VscTools/>Outils</h3>
